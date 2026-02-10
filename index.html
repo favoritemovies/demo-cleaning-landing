@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skyline Clean Co. — NYC Cleaning Services</title>
+  <meta name="description" content="Modern, reliable cleaning services in NYC. Homes, apartments, offices. Same-day availability." />
+
+  <meta property="og:title" content="Skyline Clean Co. — NYC Cleaning Services" />
+  <meta property="og:description" content="Modern, reliable cleaning services in NYC. Homes, apartments, offices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__logo" aria-hidden="true">◎</span>
+        <span class="brand__text">
+          <span class="brand__name">Skyline Clean</span>
+          <span class="brand__tag">NY • Homes & Offices</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="#services" data-i18n="navServices">Services</a>
+        <a class="nav__link" href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a class="nav__link" href="#faq" data-i18n="navFaq">FAQ</a>
+        <a class="nav__btn" href="#contact" data-i18n="navContact">Contact</a>
+
+        <button class="lang" type="button" id="langBtn" aria-label="Switch language">
+          <span class="lang__pill" id="langPill">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="badge" data-i18n="heroBadge">Trusted local cleaning team</p>
+          <h1 class="h1" data-i18n="heroTitle">Sparkling clean spaces — without the stress</h1>
+          <p class="lead" data-i18n="heroText">
+            Residential & office cleaning in NYC. Transparent pricing, quick booking, and consistent quality.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact" data-i18n="ctaBook">Request a quote</a>
+            <a class="btn" href="#services" data-i18n="ctaExplore">Explore services</a>
+          </div>
+
+          <ul class="ticks">
+            <li data-i18n="tick1">Background-checked team</li>
+            <li data-i18n="tick2">Eco-friendly products available</li>
+            <li data-i18n="tick3">Same-day slots (when available)</li>
+          </ul>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__cardTop">
+            <div class="miniTitle" data-i18n="miniTitle">Popular</div>
+            <div class="miniLine">
+              <div class="miniBig" data-i18n="miniBig">Apartment Deep Clean</div>
+              <div class="miniSmall" data-i18n="miniSmall">2–3 hours • Supplies included</div>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">4.9</div>
+              <div class="stat__txt" data-i18n="stat1">Average rating</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">48h</div>
+              <div class="stat__txt" data-i18n="stat2">Fast scheduling</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">NYC</div>
+              <div class="stat__txt" data-i18n="stat3">Local team</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="callout">
+            <p class="callout__title" data-i18n="calloutTitle">Quick request</p>
+            <p class="callout__text" data-i18n="calloutText">
+              Leave your email and we’ll reply with availability and a quote.
+            </p>
+
+            <form class="quickForm" id="quickForm">
+              <input class="input" type="email" name="email" placeholder="Email" required />
+              <button class="btn btn--primary" type="submit" data-i18n="calloutBtn">Send</button>
+            </form>
+
+            <p class="small" id="quickMsg" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section">
+      <div class="container">
+        <div class="grid3">
+          <div class="card">
+            <h3 class="h3" data-i18n="trust1Title">Reliable</h3>
+            <p class="p" data-i18n="trust1Text">On-time arrivals, clear communication, and a checklist-driven process.</p>
+          </div>
+          <div class="card">
+            <h3 class="h3" data-i18n="trust2Title">Professional</h3>
+            <p class="p" data-i18n="trust2Text">Trained team, quality control, and respectful care for your space.</p>
+          </div>
+          <div class="card">
+            <h3 class="h3" data-i18n="trust3Title">Flexible</h3>
+            <p class="p" data-i18n="trust3Text">Weekly, bi-weekly, monthly, move-in/out, or one-time deep clean.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+      <section class="section" id="services">
+     <div class="servicesSplit">
+  <div>
+    <div class="sectionHead">
+      <h2 class="h2" data-i18n="servicesTitle">Services</h2>
+      <p class="p" data-i18n="servicesSubtitle">Choose the level you need — we’ll tailor the checklist.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+            <h3 class="h3" data-i18n="svc1Title">Standard clean</h3>
+            <p class="p" data-i18n="svc1Text">Kitchen, bathrooms, floors, dusting, tidying. Great for maintenance.</p>
+            <ul class="bullets">
+              <li data-i18n="svc1b1">Apartments & homes</li>
+              <li data-i18n="svc1b2">Weekly / monthly</li>
+              <li data-i18n="svc1b3">Add-ons available</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="svc2Title">Deep clean</h3>
+            <p class="p" data-i18n="svc2Text">A detailed reset: edges, inside appliances (optional), buildup removal.</p>
+            <ul class="bullets">
+              <li data-i18n="svc2b1">Spring cleaning</li>
+              <li data-i18n="svc2b2">Post-renovation</li>
+              <li data-i18n="svc2b3">High-traffic spaces</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="svc3Title">Move in/out</h3>
+            <p class="p" data-i18n="svc3Text">Perfect for landlords and tenants: empty-space deep clean.</p>
+            <ul class="bullets">
+              <li data-i18n="svc3b1">Fast turnaround</li>
+              <li data-i18n="svc3b2">Inside cabinets (optional)</li>
+              <li data-i18n="svc3b3">Photo checklist</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="svc4Title">Office clean</h3>
+            <p class="p" data-i18n="svc4Text">Desks, meeting rooms, kitchens, restrooms, trash removal.</p>
+            <ul class="bullets">
+              <li data-i18n="svc4b1">After-hours options</li>
+              <li data-i18n="svc4b2">Recurring plans</li>
+              <li data-i18n="svc4b3">Supply restocking (optional)</li>
+            </ul>
+          </div>
+        </div>
+  </div>
+
+  <aside class="servicesPhoto">
+    <img src="assets/cleaning-detail.jpg" alt="Professional cleaning" />
+    <p class="small" style="margin-top:10px;">
+      <span data-i18n="servicesPhotoNote">Professional care for every surface.</span>
+    </p>
+  </aside>
+</div>
+</section>
+    
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2" data-i18n="pricingTitle">Pricing</h2>
+          <p class="p" data-i18n="pricingSubtitle">Starting from — final quote depends on size and scope.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card price">
+            <div class="price__top">
+              <h3 class="h3" data-i18n="price1Title">One-time clean</h3>
+              <div class="price__num">$120+</div>
+            </div>
+            <p class="p" data-i18n="price1Text">Best for small apartments and quick refresh.</p>
+            <a class="btn btn--primary" href="#contact" data-i18n="priceBtn">Get a quote</a>
+          </div>
+
+          <div class="card price price--featured">
+            <div class="price__top">
+              <h3 class="h3" data-i18n="price2Title">Deep clean</h3>
+              <div class="price__num">$220+</div>
+            </div>
+            <p class="p" data-i18n="price2Text">Detailed checklist — perfect for reset.</p>
+            <a class="btn btn--primary" href="#contact" data-i18n="priceBtn2">Request availability</a>
+          </div>
+
+          <div class="card price">
+            <div class="price__top">
+              <h3 class="h3" data-i18n="price3Title">Recurring</h3>
+              <div class="price__num">$95+</div>
+            </div>
+            <p class="p" data-i18n="price3Text">Weekly / bi-weekly plans with priority slots.</p>
+            <a class="btn btn--primary" href="#contact" data-i18n="priceBtn3">Start plan</a>
+          </div>
+        </div>
+
+        <p class="fine" data-i18n="pricingFine">
+          * Demo prices for portfolio purposes. Real business should adjust based on market and scope.
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2" data-i18n="testTitle">Testimonials</h2>
+          <p class="p" data-i18n="testSubtitle">What clients say about the experience.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <p class="quote" data-i18n="q1">“Super easy to book and the team was professional. The apartment looked brand new.”</p>
+            <p class="small">— <span data-i18n="q1n">Alex, Manhattan</span></p>
+          </div>
+          <div class="card">
+            <p class="quote" data-i18n="q2">“Great communication and attention to details. I’ll definitely book again.”</p>
+            <p class="small">— <span data-i18n="q2n">Maya, Brooklyn</span></p>
+          </div>
+          <div class="card">
+            <p class="quote" data-i18n="q3">“Move-out cleaning was perfect. Landlord approved immediately.”</p>
+            <p class="small">— <span data-i18n="q3n">Chris, Queens</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2" data-i18n="faqTitle">FAQ</h2>
+          <p class="p" data-i18n="faqSubtitle">Common questions before booking.</p>
+        </div>
+
+        <div class="accordion">
+          <details class="acc" open>
+            <summary data-i18n="faq1q">Do you bring supplies?</summary>
+            <p class="p" data-i18n="faq1a">Yes. We can also use your preferred products on request.</p>
+          </details>
+          <details class="acc">
+            <summary data-i18n="faq2q">How do you estimate the price?</summary>
+            <p class="p" data-i18n="faq2a">Based on space size, level of cleaning, and add-ons.</p>
+          </details>
+          <details class="acc">
+            <summary data-i18n="faq3q">Can I book recurring cleaning?</summary>
+            <p class="p" data-i18n="faq3a">Yes. Weekly or bi-weekly plans get priority scheduling.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2" data-i18n="contactTitle">Contact</h2>
+          <p class="p" data-i18n="contactSubtitle">Tell us what you need — we’ll reply soon.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 class="h3" data-i18n="contactCardTitle">Request</h3>
+            <form class="form" id="contactForm">
+              <div class="row">
+                <label class="label">
+                  <span data-i18n="fName">Name</span>
+                  <input class="input" name="name" required />
+                </label>
+                <label class="label">
+                  <span data-i18n="fEmail">Email</span>
+                  <input class="input" type="email" name="email" required />
+                </label>
+              </div>
+
+              <label class="label">
+                <span data-i18n="fType">Service type</span>
+                <select class="input" name="type">
+                  <option value="standard" data-i18n="optStandard">Standard clean</option>
+                  <option value="deep" data-i18n="optDeep">Deep clean</option>
+                  <option value="move" data-i18n="optMove">Move in/out</option>
+                  <option value="office" data-i18n="optOffice">Office clean</option>
+                </select>
+              </label>
+
+              <label class="label">
+                <span data-i18n="fMsg">Message</span>
+                <textarea class="input" name="message" rows="4" placeholder="Apartment size, preferred date, any notes..."></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit" data-i18n="sendBtn">Send</button>
+              <p class="small" id="formMsg" aria-live="polite"></p>
+              <p class="fine" data-i18n="contactNote">This is a demo form (no server). It opens your email client with the message.</p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="contactAltTitle">Direct</h3>
+            <p class="p">
+              <span data-i18n="emailLabel">Email:</span>
+              <a class="link" href="mailto:hello@skylineclean.co">hello@skylineclean.co</a>
+            </p>
+            <p class="p">
+              <span data-i18n="phoneLabel">Phone:</span>
+              <a class="link" href="tel:+12125550123">+1 (212) 555-0123</a>
+            </p>
+            <p class="p">
+              <span data-i18n="areaLabel">Service area:</span>
+              <span data-i18n="areaText">Manhattan, Brooklyn, Queens</span>
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="small" data-i18n="credit">
+              Demo landing built by <strong>Natalia Azarevich</strong>. Add it to your portfolio with a link.
+            </p>
+            <a class="btn" href="mailto:natalia.azarevich.dev@gmail.com?subject=Landing%20website%20request" data-i18n="creditBtn">
+              Work with the developer
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="small">© <span id="year"></span> Skyline Clean Co.</p>
+      <p class="small">
+        <span data-i18n="footerDemo">Demo project for portfolio.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
