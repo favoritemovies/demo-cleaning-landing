@@ -283,6 +283,20 @@ a{ color: inherit; text-decoration: none; }
   gap: 12px; flex-wrap: wrap;
 }
 
+.footer-credit{
+  margin:0;
+  display:flex;
+  align-items:center;
+  gap: 8px;
+}
+.credit-link{
+  color: var(--accent);
+  font-weight: 950;
+  text-decoration:none;
+}
+.credit-link:hover{ text-decoration: underline; }
+.credit-link:focus{ outline:none; box-shadow: var(--focus); border-radius: 10px; }
+
 /* ===== Responsive ===== */
 @media (max-width: 900px){
   .hero__grid{ grid-template-columns: 1fr; }
